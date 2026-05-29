@@ -8,9 +8,9 @@ import { useWishlist } from '@/context/WishlistContext'
 
 export default function ProductCard({product}: ProductCardProps) {
 
-    const isLiked = false
+    //const isLiked = false
     const {toggleWishlist,isInWishlist} = useWishlist()
-    
+    const isLiked = isInWishlist(product._id)
   return (
     <View className='w-[48%] mb-4'>00
       <Link href={`/product/${product._id}`} asChild>

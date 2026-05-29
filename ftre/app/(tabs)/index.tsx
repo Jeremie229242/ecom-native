@@ -128,7 +128,7 @@ export default function Home() {
         ):
         (
           <View className="flex-row flex-wrap justify-between">
-          {products.slice(0, 4).map((product) => (
+          {products.slice(0, 10).map((product) => (
             <ProductCard
               key={product._id}
               product={product}
